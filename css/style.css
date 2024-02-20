@@ -98,14 +98,33 @@ nav ul li a {
 }
 
 .hero__content {
-  background: url(/images/therapy1.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(153, 50, 204, 0.5), rgba(153, 50, 204, 0.5)), url(/images/therapy1.jpg) no-repeat center center/cover;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  line-height: 2em;
+  font-size: large;
+  color: white;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+}
+section .child {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: no-wrap;
 }
+
 
 .how-it-works__content li {
   display: flex;
@@ -126,4 +145,21 @@ nav ul li a {
 }
 .how-it-works__content img {
   border-radius: 100px;
+section .child img {
+  border-radius: 100px;
+}
+section .individual img {
+  border-radius: 100px;
+}
+section .couples img {
+  border-radius: 100px;
+}
+section .aged img {
+  border-radius: 100px;
+}
+section section img {
+  width: 400px;
+  height: 400px;
+  border-top-left-radius: 100px;
+
 }
