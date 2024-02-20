@@ -1,3 +1,13 @@
+@use "./../../utilities/mixin" as *;
+.features {
+  @include flex(space-between, center, column);
+}
 .feature {
-  color: red;
+  display: flex;
+  box-shadow: 0 0 4px rgb(83, 11, 199);
+  margin: 2em;
+  border-radius: 50px;
+  img {
+    border-radius: 50px;
+  }
 }

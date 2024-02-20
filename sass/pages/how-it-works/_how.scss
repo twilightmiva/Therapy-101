@@ -1,0 +1,22 @@
+@use "./../../utilities/mixin" as *;
+.how-it-works__content li{
+    @include flex(space-between, center)
+    
+
+    }
+    #how-it-works h2, p, h3{
+        margin: 2em;
+
+    }
+.how-it-works__content{
+        box-shadow: 0 0 4px rgb(83, 11, 199); 
+        margin: 2em;
+        border-radius: 100px;
+        img{
+            border-radius: 100px;
+        }
+
+        }         
+ 
+
+    
