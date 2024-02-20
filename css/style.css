@@ -5,7 +5,16 @@
 }
 
 .container {
-  width: 80%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  padding-top: 2rem;
+}
+
+header {
+  border-top: 3px solid darkorchid;
 }
 
 nav {
@@ -23,10 +32,59 @@ nav ul {
   flex-wrap: no-wrap;
   gap: 5rem;
 }
+nav ul li a:hover {
+  border-bottom: 3px solid darkorchid;
+}
 nav ul li {
   list-style-type: none;
 }
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: darkviolet;
+  font-weight: bold;
+}
+
+body {
+  padding-top: 2rem;
+}
+
+header {
+  border-top: 3px solid darkorchid;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  gap: 5rem;
+}
+nav ul li a:hover {
+  border-bottom: 3px solid darkorchid;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: darkviolet;
+  font-weight: bold;
+}
+
+.hero__content {
+  background: url(/images/therapy1.jpg) no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
 }
