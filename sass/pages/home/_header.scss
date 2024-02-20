@@ -33,7 +33,34 @@ nav{
     
 }
 .hero__content{
-    background: url(/images/therapy1.jpg) no-repeat center center /cover;
+    background:linear-gradient(rgba(60%,19.6%,80%,0.5),rgba(60%,19.6%,80%,0.5)), url(/images/therapy1.jpg) no-repeat center center /cover;
     height:100vh;
-    @include flex (center,center)
+    @include flex (center,center,column);
+    line-height: 2em;
+    font-size: large;
+    color:white;
+    
 }
+section{
+    @include flex (center,center,column);
+    .child{
+        @include flex (center,center);
+     img{
+        border-radius: 100px;
+    }
+    }
+    .individual img{
+        border-radius: 100px;
+    }
+    .couples img{ 
+        border-radius: 100px;
+    
+    }
+    .aged img{
+        border-radius: 100px;
+    }
+section img{
+    width: 400px;
+    height: 400px;
+    border-top-left-radius: 100px;
+}}
