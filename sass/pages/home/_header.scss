@@ -1,15 +1,39 @@
 @use"./../../utilities/mixin" as *;
+body{
+
+    padding-top: 2rem;
+}
+header{
+    
+    border-top: 3px solid darkorchid;
+}
 nav{
     @include flex(space-between,center);
     ul{
         @include flex(space-between,center);
         gap:5rem;
+        li a:hover{
+            // color: lightgoldenrodyellow;
+            // background-color: darkorchid;
+            // padding: 1rem 3rem;
+            border-bottom: 3px solid darkorchid;
+
+        }
         li{
             list-style-type: none;
+            
             a{
             text-decoration: none;
-            color:black;
+            color:darkviolet;
+            font-weight: bold;
+            
         }
     }
     }
+    
+}
+.hero__content{
+    background: url(/images/therapy1.jpg) no-repeat center center /cover;
+    height:100vh;
+    @include flex (center,center)
 }
