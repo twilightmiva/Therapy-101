@@ -1,13 +1,47 @@
 @use "./../../utilities/mixin" as *;
 .features {
   @include flex(space-between, center, column);
-}
-.feature {
-  display: flex;
-  box-shadow: 0 0 4px rgb(83, 11, 199);
-  margin: 2em;
-  border-radius: 50px;
-  img {
-    border-radius: 50px;
+  // color:darkorchid;
+  h2{
+    color:darkorchid;
   }
 }
+.feature {
+  margin: 2em;
+  @include flex(space-between, center);
+  // width: 50%;
+  box-shadow: 0 0 4px rgb(83, 11, 199);
+  border-radius: 50px;
+  p{
+    color: darkorchid;
+    font-size: large;
+  }
+  h3{
+    color:darkblue;
+    font-size: xx-large;
+  }
+  h4{
+    color:darkblue;
+  }
+  ul{
+    list-style-type: none;
+    flex:1;
+  }
+  
+  div:first-child {
+    flex: 1;
+    
+  }
+  div:last-child {
+    flex: 1;
+  }
+  img {
+    border-top-left-radius: 50px; 
+     border-bottom-left-radius: 50px;
+
+
+  }
+}
+// @media screen (ma){
+  
+// }

@@ -1,66 +1,147 @@
-@use"./../../utilities/mixin" as *;
-body{
+@use "./../../utilities/mixin" as *;
+body {
+  padding-top: 2rem;
+}
+header {
+  border-top: 3px solid darkorchid;
+}
+nav {
+  @include flex(space-between, center);
+  ul {
+    @include flex(space-between, center);
+    gap: 5rem;
+    li a:hover {
+      // color: lightgoldenrodyellow;
+      // background-color: darkorchid;
+      // padding: 1rem 3rem;
+      border-bottom: 3px solid darkorchid;
+    }
+    li {
+      list-style-type: none;
 
-    padding-top: 2rem;
+      a {
+        text-decoration: none;
+        color: darkviolet;
+        font-weight: bold;
+      }
+    }
+  }
 }
-header{
+.hero__content {
+  background: linear-gradient(
+      rgba(60%, 19.6%, 80%, 0.5),
+      rgba(60%, 19.6%, 80%, 0.5)
+    ),
+    url(/images/therapy1.jpg) no-repeat center center / cover;
+  height: 100vh;
+  @include flex(center, center, column);
+  line-height: 2em;
+  font-size: large;
+  color: white;
+}
+.title{
+    @include flex(space-between, center,column);
+    margin: 2rem 0;
+    line-height: 2rem;
+    color: darkmagenta
+}
+.best{
+    @include flex(space-between, center);
     
-    border-top: 3px solid darkorchid;
 }
-nav{
-    @include flex(space-between,center);
-    ul{
-        @include flex(space-between,center);
-        gap:5rem;
-        li a:hover{
-            // color: lightgoldenrodyellow;
-            // background-color: darkorchid;
-            // padding: 1rem 3rem;
-            border-bottom: 3px solid darkorchid;
+.best1 {
+  @include flex(space-between, center, column);
+  gap: 2rem;
 
-        }
-        li{
-            list-style-type: none;
-            
-            a{
-            text-decoration: none;
-            color:darkviolet;
-            font-weight: bold;
-            
-        }
+  .child {
+    @include flex(center, center);
+    box-shadow: 0 0 4px rgb(83, 11, 199);
+    border-radius: 100px;
+    flex:1;
+    padding-left: 2rem;
+    color:darkmagenta;
+    img {
+      border-radius: 100px;
+      padding-left: 2rem;
+      flex:1;
     }
+  }
+  .individual{
+    @include flex(center, center);
+    box-shadow: 0 0 4px rgb(83, 11, 199);
+    border-radius: 100px;
+    padding-left: 2rem;
+    flex:1;
+    color:darkmagenta;
+    img {
+    border-radius:100px;
+    padding-left: 2rem;
+    flex:1;
     }
-    
 }
-.hero__content{
-    background:linear-gradient(rgba(60%,19.6%,80%,0.5),rgba(60%,19.6%,80%,0.5)), url(/images/therapy1.jpg) no-repeat center center /cover;
-    height:100vh;
-    @include flex (center,center,column);
-    line-height: 2em;
-    font-size: large;
-    color:white;
-    
 }
-section{
-    @include flex (center,center,column);
-    .child{
-        @include flex (center,center);
-     img{
-        border-radius: 100px;
+
+.best2{
+    @include flex(space-between,center,column);
+    gap: 2rem;
+  .couples {
+    @include flex(center, center);
+    box-shadow: 0 0 4px rgb(83, 11, 199);
+    border-radius: 100px;
+    padding-left: 2rem;
+    line-height: 1.5rem;
+    flex:1;
+    color:darkmagenta;
+  img {
+    border-radius: 100px;
+    padding-left: 2rem;
+    flex:1;
+  }
+}
+  .aged {
+    @include flex(space-between, center);
+    box-shadow: 0 0 4px rgb(83, 11, 199);
+    border-radius: 100px;
+    padding-left: 2rem;
+    color:darkmagenta;
+   img {
+    border-radius: 100px;
+    padding-left: 2rem;
+  }
+}
+}
+.whyus{
+  @include flex(center,center,column);
+  margin-bottom: 2rem;
+  .language{
+    @include flex(center,center);
+    gap:1rem;
+
+  }
+  h1{
+    color: darkmagenta;
+    margin-top: 2rem;
+    font-size: xx-large;
+  }
+  h3{
+    color:darkmagenta;
+    margin: 1.5rem;
+  }
+  .language1{
+    @include flex(space-between, center,column);
+    border-radius: 200px;
+    box-shadow: 0 0 4px rgb(83, 11, 199);
+    p{
+  
+      font-size: x-large;
+      font-weight: bold;
+      color:darkmagenta;
     }
-    }
-    .individual img{
-        border-radius: 100px;
-    }
-    .couples img{ 
-        border-radius: 100px;
     
-    }
-    .aged img{
-        border-radius: 100px;
-    }
-section img{
-    width: 400px;
-    height: 400px;
-    border-top-left-radius: 100px;
-}}
+  }
+  img{
+    border-radius: 200px;
+
+  }
+}
+

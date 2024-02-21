@@ -29,6 +29,66 @@ header{
             
         }
     }
+}
+    }
+    .contactus{
+    
+        @include flex(center,center,column);
+        h2{
+            margin-top: 1rem;
+            font-size: xxx-large;
+            color:darkorchid
+        }
+        
     }
     
+
+.feedback{
+    background: linear-gradient(
+        rgba(60%, 19.6%, 80%, 0.5),
+        rgba(60%, 19.6%, 80%, 0.5)
+      ),url(/images/contact.webp) no-repeat center center /cover;
+      height: 100vh;
+
+}
+.form{
+    margin-top: 4rem;
+    @include flex(center,stretch,column);
+    gap:2rem;
+    p{
+        color: lightgoldenrodyellow;
+        font-size: large;
+        font-weight: bold;
+    }
+    input{
+        padding:2rem;
+        // background-color: darkorchid;
+        border-radius: 20px;
+        border: none;
+        width: 100%;
+        color:darkorchid;
+        
+        
+
+    }
+
+    input::placeholder,textarea::placeholder{
+        color:darkorchid
+    }
+    textarea{
+        // background-color: darkorchid;
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 1rem;
+        color:darkorchid;
+    }
+    button{
+        margin-left: 3rem;
+padding: 1rem 6rem;
+        border-radius: 50px;
+        border: none;
+        background-color: darkorchid;
+        color: lightgoldenrodyellow;
+        font-size: large;
+    }
 }
