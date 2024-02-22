@@ -5,17 +5,18 @@ body {
 header {
   border-top: 3px solid darkorchid;
 }
-nav {
+.nav {
   @include flex(space-between, center);
+  &__icon{
+    
+    // background-color: red;
+    display: none;
+  
+}
   ul {
     @include flex(space-between, center);
     gap: 5rem;
-    li a:hover {
-      // color: lightgoldenrodyellow;
-      // background-color: darkorchid;
-      // padding: 1rem 3rem;
-      border-bottom: 3px solid darkorchid;
-    }
+  
     li {
       list-style-type: none;
 
@@ -26,6 +27,7 @@ nav {
       }
     }
   }
+  
 }
 .hero__content {
   background: linear-gradient(
@@ -38,6 +40,19 @@ nav {
   line-height: 2em;
   font-size: large;
   color: white;
+}  
+.time{
+  @include flex(center, center, column);
+margin-top: 2rem;
+p{
+  color: darkorchid;
+  font-size: medium;
+  margin-top: 0.2em;
+}
+h1{
+  color: darkmagenta;
+font-size: xx-large
+}
 }
 .title{
     @include flex(space-between, center,column);
@@ -143,5 +158,16 @@ nav {
     border-radius: 200px;
 
   }
+}
+
+@media screen and (max-width: 900px) {
+.nav__right{
+  ul{
+    display: none;
+  }
+}
+.nav__icon{
+  display: inline-block;
+}
 }
 
