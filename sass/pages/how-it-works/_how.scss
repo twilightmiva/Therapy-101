@@ -3,6 +3,7 @@
   @include flex(space-between, center,column);
   width: 50%;
   margin: 0 auto;
+  
   h2{
     color: darkblue;
     line-height: 2rem;
@@ -46,15 +47,18 @@
   box-shadow: 0 0 4px rgb(83, 11, 199);
   margin: 2em;
   border-radius: 100px;
-// width: 50%;
+width: 100%;
   img {
     border-radius: 100px;
   }
   h4{
     color:darkblue;
     font-size: x-large;
+    // padding: 1rem;
   }
   p{
     color: darkmagenta;
+    // padding: 1rem;
   }
+  
 }

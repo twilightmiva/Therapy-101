@@ -36,18 +36,36 @@ header {
     ),
     url(/images/therapy1.jpg) no-repeat center center / cover;
   height: 100vh;
-  @include flex(center, center, column);
+  @include flex(center, center, column,wrap);
   line-height: 2em;
   font-size: large;
   color: white;
-}  
+  margin-bottom: 2rem;
+} 
+.best__content{
+  flex:wrap;
+} 
 .time{
-  @include flex(center, center, column);
+  @include flex(center, center,column);
 margin-top: 2rem;
+text-align: center;
+border-radius: 50px;
+box-shadow: 0 0 4px rgb(83, 11, 199);
+width: 50%;
+margin: 0 auto;
+padding: 1rem ;
+
+img{
+  width:100%;
+}
 p{
   color: darkorchid;
   font-size: medium;
-  margin-top: 0.2em;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+
 }
 h1{
   color: darkmagenta;
@@ -61,7 +79,8 @@ font-size: xx-large
     color: darkmagenta
 }
 .best{
-    @include flex(space-between, center);
+    @include flex(space-between, center,wrap);
+    
     
 }
 .best1 {
@@ -75,6 +94,7 @@ font-size: xx-large
     flex:1;
     padding-left: 2rem;
     color:darkmagenta;
+    width: 100%;
     img {
       border-radius: 100px;
       padding-left: 2rem;
@@ -88,6 +108,7 @@ font-size: xx-large
     padding-left: 2rem;
     flex:1;
     color:darkmagenta;
+    width:100%;
     img {
     border-radius:100px;
     padding-left: 2rem;
@@ -107,6 +128,7 @@ font-size: xx-large
     line-height: 1.5rem;
     flex:1;
     color:darkmagenta;
+    width: 100%;
   img {
     border-radius: 100px;
     padding-left: 2rem;
@@ -119,6 +141,7 @@ font-size: xx-large
     border-radius: 100px;
     padding-left: 2rem;
     color:darkmagenta;
+    width: 100%;
    img {
     border-radius: 100px;
     padding-left: 2rem;
@@ -128,6 +151,15 @@ font-size: xx-large
 .whyus{
   @include flex(center,center,column);
   margin-bottom: 2rem;
+  button{
+    background-color: darkorchid;
+    border: none;
+    color: white;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+    border-radius: 100px;
+    font-size: x-large
+  }
   .language{
     @include flex(center,center);
     gap:1rem;
