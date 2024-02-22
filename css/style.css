@@ -378,8 +378,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: wrap;
-  flex-wrap: no-wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .best1 {
@@ -493,7 +493,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 .whyus h1 {
@@ -536,7 +536,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
   width: 50%;
   margin: 0 auto;
 }
@@ -580,7 +580,10 @@ header {
 .how-it-works__content h4 {
   color: darkblue;
   font-size: x-large;
+  padding: 2rem;
 }
 .how-it-works__content p {
   color: darkmagenta;
+  padding: 0 2rem;
+  font-size: large;
 }

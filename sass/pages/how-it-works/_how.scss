@@ -1,6 +1,6 @@
 @use "./../../utilities/mixin" as *;
 #how-it-works{
-  @include flex(space-between, center,column);
+  @include flex(space-between, center,column,wrap);
   width: 50%;
   margin: 0 auto;
   
@@ -54,11 +54,12 @@ width: 100%;
   h4{
     color:darkblue;
     font-size: x-large;
-    // padding: 1rem;
+    padding: 2rem;
   }
   p{
     color: darkmagenta;
-    // padding: 1rem;
+    padding: 0 2rem ;
+    font-size: large;
   }
   
 }

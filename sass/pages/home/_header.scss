@@ -7,16 +7,14 @@ header {
 }
 .nav {
   @include flex(space-between, center);
-  &__icon{
-    
+  &__icon {
     // background-color: red;
     display: none;
-  
-}
+  }
   ul {
     @include flex(space-between, center);
     gap: 5rem;
-  
+
     li {
       list-style-type: none;
 
@@ -27,7 +25,6 @@ header {
       }
     }
   }
-  
 }
 .hero__content {
   background: linear-gradient(
@@ -36,52 +33,49 @@ header {
     ),
     url(/images/therapy1.jpg) no-repeat center center / cover;
   height: 100vh;
-  @include flex(center, center, column,wrap);
+  @include flex(center, center, column, wrap);
   line-height: 2em;
   font-size: large;
   color: white;
   margin-bottom: 2rem;
-} 
-.best__content{
-  flex:wrap;
-} 
-.time{
-  @include flex(center, center,column);
-margin-top: 2rem;
-text-align: center;
-border-radius: 50px;
-box-shadow: 0 0 4px rgb(83, 11, 199);
-width: 50%;
-margin: 0 auto;
-padding: 1rem ;
-
-img{
-  width:100%;
 }
-p{
-  color: darkorchid;
-  font-size: medium;
-  max-width: 500px;
+.best__content {
+  flex: wrap;
+}
+.time {
+  @include flex(center, center, column);
+  margin-top: 2rem;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0 0 4px rgb(83, 11, 199);
+  width: 50%;
   margin: 0 auto;
-  padding: 1rem 0;
-  font-size: 1.1rem;
+  padding: 1rem;
 
+  img {
+    width: 100%;
+  }
+  p {
+    color: darkorchid;
+    font-size: medium;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+  }
+  h1 {
+    color: darkmagenta;
+    font-size: xx-large;
+  }
 }
-h1{
+.title {
+  @include flex(space-between, center, column);
+  margin: 2rem 0;
+  line-height: 2rem;
   color: darkmagenta;
-font-size: xx-large
 }
-}
-.title{
-    @include flex(space-between, center,column);
-    margin: 2rem 0;
-    line-height: 2rem;
-    color: darkmagenta
-}
-.best{
-    @include flex(space-between, center,wrap);
-    
-    
+.best {
+  @include flex(space-between, center, row, wrap);
 }
 .best1 {
   @include flex(space-between, center, column);
@@ -91,115 +85,110 @@ font-size: xx-large
     @include flex(center, center);
     box-shadow: 0 0 4px rgb(83, 11, 199);
     border-radius: 100px;
-    flex:1;
+    flex: 1;
     padding-left: 2rem;
-    color:darkmagenta;
+    color: darkmagenta;
     width: 100%;
     img {
       border-radius: 100px;
       padding-left: 2rem;
-      flex:1;
+      flex: 1;
     }
   }
-  .individual{
+  .individual {
     @include flex(center, center);
     box-shadow: 0 0 4px rgb(83, 11, 199);
     border-radius: 100px;
     padding-left: 2rem;
-    flex:1;
-    color:darkmagenta;
-    width:100%;
+    flex: 1;
+    color: darkmagenta;
+    width: 100%;
     img {
-    border-radius:100px;
-    padding-left: 2rem;
-    flex:1;
+      border-radius: 100px;
+      padding-left: 2rem;
+      flex: 1;
     }
-}
+  }
 }
 
-.best2{
-    @include flex(space-between,center,column);
-    gap: 2rem;
+.best2 {
+  @include flex(space-between, center, column);
+  gap: 2rem;
   .couples {
     @include flex(center, center);
     box-shadow: 0 0 4px rgb(83, 11, 199);
     border-radius: 100px;
     padding-left: 2rem;
     line-height: 1.5rem;
-    flex:1;
-    color:darkmagenta;
+    flex: 1;
+    color: darkmagenta;
     width: 100%;
-  img {
-    border-radius: 100px;
-    padding-left: 2rem;
-    flex:1;
+    img {
+      border-radius: 100px;
+      padding-left: 2rem;
+      flex: 1;
+    }
   }
-}
   .aged {
     @include flex(space-between, center);
     box-shadow: 0 0 4px rgb(83, 11, 199);
     border-radius: 100px;
     padding-left: 2rem;
-    color:darkmagenta;
+    color: darkmagenta;
     width: 100%;
-   img {
-    border-radius: 100px;
-    padding-left: 2rem;
+    img {
+      border-radius: 100px;
+      padding-left: 2rem;
+    }
   }
 }
-}
-.whyus{
-  @include flex(center,center,column);
+.whyus {
+  @include flex(center, center,column);
   margin-bottom: 2rem;
-  button{
+  button {
     background-color: darkorchid;
     border: none;
     color: white;
     padding: 2rem 3rem;
     margin-top: 2rem;
     border-radius: 100px;
-    font-size: x-large
+    font-size: x-large;
   }
-  .language{
-    @include flex(center,center);
-    gap:1rem;
-
+  .language {
+    @include flex(center, center,row,wrap);
+    gap: 1rem;
   }
-  h1{
+  h1 {
     color: darkmagenta;
     margin-top: 2rem;
     font-size: xx-large;
   }
-  h3{
-    color:darkmagenta;
+  h3 {
+    color: darkmagenta;
     margin: 1.5rem;
   }
-  .language1{
-    @include flex(space-between, center,column);
+  .language1 {
+    @include flex(space-between, center, column);
     border-radius: 200px;
     box-shadow: 0 0 4px rgb(83, 11, 199);
-    p{
-  
+    p {
       font-size: x-large;
       font-weight: bold;
-      color:darkmagenta;
+      color: darkmagenta;
     }
-    
   }
-  img{
+  img {
     border-radius: 200px;
-
   }
 }
 
 @media screen and (max-width: 900px) {
-.nav__right{
-  ul{
-    display: none;
+  .nav__right {
+    ul {
+      display: none;
+    }
+  }
+  .nav__icon {
+    display: inline-block;
   }
 }
-.nav__icon{
-  display: inline-block;
-}
-}
-
