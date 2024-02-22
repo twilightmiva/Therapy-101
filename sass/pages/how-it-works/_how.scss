@@ -1,25 +1,45 @@
 @use "./../../utilities/mixin" as *;
-.how-it-works__content {
-  li {
-    @include flex(space-between, center);
-    div:first-child {
-      flex: 1;
-    }
-    div:last-child {
-      flex: 1;
-        @include flex(flex-end, flex-start, column);
-      img{
-align-self: flex-end;
-      }
-    }
+#how-it-works{
+  @include flex(space-between, center,column);
+  width: 50%;
+  margin: 0 auto;
+  h2{
+    color: darkblue
+  }
+  p{
+    color: darkmagenta
   }
 }
+.how-it-works__content {
+  // li {
+    @include flex(space-between, center);
+    gap: 2rem;
+//     div:first-child {
+//       flex: 1;
+//     }
+//     div:last-child {
+//       flex: 1;
+//         @include flex(flex-end, flex-start, column);
+//       img{
+// align-self: flex-end;
+//       }
+//     }
+  }
+// }
 
 .how-it-works__content {
   box-shadow: 0 0 4px rgb(83, 11, 199);
   margin: 2em;
   border-radius: 100px;
+// width: 50%;
   img {
     border-radius: 100px;
+  }
+  h4{
+    color:darkblue;
+    font-size: x-large;
+  }
+  p{
+    color: darkmagenta;
   }
 }
