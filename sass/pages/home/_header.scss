@@ -31,7 +31,7 @@ header {
       rgba(60%, 19.6%, 80%, 0.5),
       rgba(60%, 19.6%, 80%, 0.5)
     ),
-    url(/images/therapy1.jpg) no-repeat center center / cover;
+    url("https://twilightmiva.github.io/Therapy-101/images/therapy1.jpg") no-repeat center center / cover;
   height: 100vh;
   @include flex(center, center, column, wrap);
   line-height: 2em;

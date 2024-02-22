@@ -21,7 +21,7 @@
 
 .about {
   margin-top: -2rem;
-  background: linear-gradient(rgba(153, 50, 204, 0.5), rgba(153, 50, 204, 0.5)), url(/images/about.webp) no-repeat center center/cover;
+  background: linear-gradient(rgba(153, 50, 204, 0.5), rgba(153, 50, 204, 0.5)), url("https://twilightmiva.github.io/Therapy-101/images/about.webp") no-repeat center center/cover;
   height: 50vh;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -86,7 +86,7 @@ nav ul li a {
 }
 
 .feedback {
-  background: linear-gradient(rgba(153, 50, 204, 0.5), rgba(153, 50, 204, 0.5)), url(/images/contact.webp) no-repeat center center/cover;
+  background: linear-gradient(rgba(153, 50, 204, 0.5), rgba(153, 50, 204, 0.5)), url("https://twilightmiva.github.io/Therapy-101/images/contact.webp") no-repeat center center/cover;
   height: 100vh;
 }
 
@@ -316,7 +316,7 @@ header {
 }
 
 .hero__content {
-  background: linear-gradient(rgba(153, 50, 204, 0.5), rgba(153, 50, 204, 0.5)), url(/images/therapy1.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(153, 50, 204, 0.5), rgba(153, 50, 204, 0.5)), url("https://twilightmiva.github.io/Therapy-101/images/therapy1.jpg") no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: center;
